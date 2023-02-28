@@ -5,12 +5,12 @@ import ClickLogo from './imagenes/images.png';
 function App() {
   return (
     
-    <div className="App">
+    <div className = "App" >
       
-      <div class='contenedor-logo'>
-        <img className='click-logo'
-        src={ClickLogo} 
-        alt='click logo'
+      <div class = 'contenedor-logo' >
+        <img className = 'click-logo'
+        src = { ClickLogo } 
+        alt = 'click logo'
         />
 
       </div>
