@@ -3,6 +3,8 @@ import './App.css';
 import Button from './conponent/Button.js';
 import ClickLogo from './imagenes/images.png';
 import './hojas-de-estilos/Boton.css';
+import Count from './conponent/count.jsx'
+
 
 function App() {
 
@@ -25,6 +27,10 @@ function App() {
 
       </div>
       <div className='contenedor-contador'>
+        <Count
+        numClicks='5'
+        />
+        
         <Button
         texto='clic'
         esBotonDeClic={true}

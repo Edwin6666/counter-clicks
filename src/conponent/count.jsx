@@ -1,11 +1,12 @@
 import React from "react";
+import '../hojas-de-estilos/contador.css';
 
 
-
-function count(){
+function Count({ numClicks }){
     return(
         <div className='contador'>
 
+            {numClicks}
 
         </div>
     );
@@ -15,4 +16,4 @@ function count(){
 
 
 
-export default count;
+export default Count;
