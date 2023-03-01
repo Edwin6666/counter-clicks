@@ -4,16 +4,18 @@ import Button from './conponent/Button.js';
 import ClickLogo from './imagenes/images.png';
 import './hojas-de-estilos/Boton.css';
 import Count from './conponent/count.jsx'
-
+import { useState } from 'react';
 
 function App() {
 
+  const [ numClicks, setNumClicks]= useState(0);
+
   const manejarClic = () => {
-     console.log('Clic')
+     setNumClicks( numClicks + 1)
   }
 
   const reiniciarContador = () => {
-    console.log('Reiniciar')
+    setNumClicks(0)
   }
 
   return (
@@ -28,9 +30,9 @@ function App() {
       </div>
       <div className='contenedor-contador'>
         <Count
-        numClicks='5'
+        numClicks={numClicks}
         />
-        
+
         <Button
         texto='clic'
         esBotonDeClic={true}
