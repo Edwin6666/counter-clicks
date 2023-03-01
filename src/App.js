@@ -1,12 +1,23 @@
 
 import './App.css';
+import Button from './conponent/Button.js';
 import ClickLogo from './imagenes/images.png';
+import './hojas-de-estilos/Boton.css';
 
 function App() {
+
+  const manejarClic = () => {
+     console.log('Clic')
+  }
+
+  const reiniciarContador = () => {
+    console.log('Reiniciar')
+  }
+
   return (
     
     <div className = "App" >
-      <div class = 'contenedor-logo' >
+      <div className = 'contenedor-logo' >
         <img className = 'click-logo'
         src = { ClickLogo } 
         alt = 'click logo'
@@ -14,7 +25,17 @@ function App() {
 
       </div>
       <div className='contenedor-contador'>
-        
+        <Button
+        texto='clic'
+        esBotonDeClic={true}
+        manejarClic={manejarClic}
+        />
+
+        <Button
+        texto='Reiniciar'
+        esBotonDeClic={false}
+        manejarClic={reiniciarContador}
+        />
       </div>
     </div>
   );

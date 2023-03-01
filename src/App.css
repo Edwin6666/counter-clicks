@@ -24,3 +24,12 @@ body{
     justify-content: center;
     padding: 15px;
 }
+
+
+.contenedor-contador{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 8px;
+}
+
