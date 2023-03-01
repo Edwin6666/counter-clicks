@@ -6,13 +6,15 @@ function App() {
   return (
     
     <div className = "App" >
-      
       <div class = 'contenedor-logo' >
         <img className = 'click-logo'
         src = { ClickLogo } 
         alt = 'click logo'
         />
 
+      </div>
+      <div className='contenedor-contador'>
+        
       </div>
     </div>
   );
